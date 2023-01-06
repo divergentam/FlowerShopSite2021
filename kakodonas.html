@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kako do nas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/kakodonas.css">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+</head>
+
+<body>
+
+    <div class="pozadina">
+        <img class="logo" alt="logo" src="images/logoflower.png">
+    </div>
+
+
+    <header class="cnt">
+        <div class="menu">
+            <ul>
+                <li class="boja"> <a href="index.html"> POČETNA </a> </li>
+                <li class="boja"> <a href="onlineshop.html"> ONLINE SHOP </a> </li>
+                <li class="boja"> <a href="onama.html"> O NAMA </a> </li>
+                <li class="boja"> <a href="#"> KAKO DO NAS? </a> </li>
+                <li> <a class="cart"> <img class="icon" src="images/ikona.png" alt="Shopping icon"> <span class="spn1"> 0</span> -> cena:<span class="spn2">0</span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slide-loc">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img class="slike" alt="buket" src="images/buket4.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slike" alt="buket" src="images/buket3.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slike" alt="buket" src="images/buket.jpg">
+            </div>
+
+            <a class="prethodni" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="sledeci" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="lokacija">
+            <iframe class="lokacija1" 
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Knez%20Selo,%20Serbia+(Flower%20shop)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="call">
+        <div class="vreme">
+            <table >
+                <caption>Radno vreme</caption>
+                <tr>
+                    <td class="br">dan</td>
+                    <td class="br">vreme</td>
+                </tr>
+                   
+                <tr>
+                    <td>ponedeljak</td>
+                    <td rowspan="5">09:00 - 21:00</td>
+                </tr>
+
+                <tr>
+                    <td>utorak</td>
+                </tr>
+
+                <tr>
+                    <td>sreda</td>
+                </tr>
+
+                <tr>
+                    <td>četvrtak</td>
+                </tr>
+
+                <tr>
+                    <td>petak</td>
+                </tr>
+
+                <tr>
+                    <td>subota</td>
+                    <td rowspan="2">10:00 - 20:00</td>
+                </tr>
+
+                <tr>
+                    <td>nedelja</td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <div class="poziv">
+            <div class="piccall">
+                <div class="slusalica">
+                    <img class="slikacall" alt="call" src="images/phone-call.png">
+                </div>
+            </div>
+            
+            <div class="brtel">
+                <p class="broj">
+                    06456891235
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="kontaktforma">
+
+        <div class="naslovdiv">
+            <p class="naslov">Pišite nam...</p>
+
+            <p class="podnaslov">
+                Kako ste zadovoljni našim uslugama?
+                Da li imate neke nedoumice i pitanja?
+                Možda imate neku pohvalu ili kritiku za nas?
+                <br>
+                Stojimo Vam na raspolaganju za svaki vid informacija, pohvala i kritika.
+            </p>
+        </div>
+
+        <form >
+            <label for="ime">Ime ( First Name)</label>
+            <input type="text" id="ime"  placeholder="Vaše ime... (Your first name..)">
+
+            <label for="prezime">Prezime (Last Name)</label>
+            <input type="text" id="prezime"  placeholder="Vaše prezime... (Your last name...)">
+
+            <label for="mesto">Mesto</label>
+            <select id="mesto" value="mesto">
+                <option value="Drugo mesto...">Drugo mesto... (Other place...)</option>
+                <option value="Niš">Niš</option>
+                <option value="Beograd">Beograd</option>
+                <option value="Novi Sad">Novi Sad</option>
+                <option value="Leskovac">Leskovac</option>
+                <option value="Prokuplje">Prokuplje</option>
+                <option value="Subotica">Subotica</option>
+                <option value="Smedervo">Smedervo</option>
+                <option value="Bor">Bor</option>
+                <option value="Negotin">Negotin</option>
+            </select>
+
+            <label for="poruka">Poruka</label>
+            <textarea id="poruka" value="poruka" placeholder="Ostavite poruku... (Write something...)" style="height:200px"></textarea>
+
+        </form>
+
+        <div class="dugme">
+             <a class="posalji-text" >Pošalji</a>
+        </div>
+
+        <div id="demo">
+            <p class="name">
+                Ime:
+            </p>
+            <p class="lastname">
+                Prezime:
+            </p>
+            <p class="place">
+                Mesto:
+            </p>
+            <p class="message">
+                Poruka:
+            </p>
+        </div>
+
+        <div class="naslovdiv">
+            <p class="naslov">With love, <br> your Flower shop.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+    
+        <div class="karte1">
+            <ul class="karte">
+                <li class="razmak"> <a class="razmak" href="https://www.facebook.com"> <img class="kartice" alt="facebook"
+                            src="images/facebook.png"> </a> </li>
+                <li class="razmak"> <a class="razmak" href="https://www.instagram.com"> <img class="kartice" alt="instagram"
+                            src="images/instagram.png"> </a> </li>
+                <li class="razmak"> <a class="razmak" href="kakodonas.html"> <img class="kartice" alt="gmail"
+                            src="images/gmail.png"> </a> </li>
+        
+            </ul>
+        </div>
+    
+    
+        <div class="uliniji">
+            <div class="logo2">
+                <img class="logoimg" alt="Logo" src="images/logo.png">
+            </div>
+    
+            <div class="card">
+                <ul class="karte">
+                    <li class="razmak"> <img class="kartice" alt="visa card" src="images/visa.png"> </li>
+                    <li class="razmak"> <img class="kartice" alt="mastercard" src="images/mastercard.png"> </li>
+                    <li class="razmak"> <img class="kartice" alt="paypal" src="images/paypal.png"> </li>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex); //fja koja prikazuje trenutni slajd
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n); //fje koja kontrolise koj slajd da se prikazuje 
+            //kada kliknemo na strelicu < -1 se dodaje slideindexu
+            //kada kliknemo na strelicu > +1 se dodaje slideindexu
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            //trenutni slajd
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 } //ako n predje broj slajdova vrati se na 1. slajd
+            if (n < 1) { slideIndex = slides.length } //ako n ide ispod 1 vrati se na poslednji slajd
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <script>
+        let send = document.querySelector(".posalji-text");
+        let demo = document.getElementById("demo");
+
+        send.addEventListener('click', ()=>{
+                demo.style.display = 'flex';
+            
+            let x = document.getElementById("ime").value;
+            document.querySelector(".name").innerHTML += x;
+            let y = document.getElementById("prezime").value;
+            document.querySelector(".lastname").innerHTML += y;
+            let z = document.getElementById("mesto").value;
+            document.querySelector(".place").innerHTML += z;
+            let q = document.getElementById("poruka").value;
+            document.querySelector(".message").innerHTML += q;
+            console.log(x,y,z,q);
+        })
+
+    </script>
+
+    <script src="cart.js"></script>
+
+
+</body>
+
+</html>

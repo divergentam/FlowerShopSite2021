@@ -1,0 +1,496 @@
+    
+    @font-face {
+        font-family: "DancingScript";
+        src: url("../fonts/DancingScript-Bold.woff") format("woff"), url("../fonts/DancingScript-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DancingScript";
+        src: url("../fonts/DancingScript-SemiBold.woff") format("woff"), url("../fonts/DancingScript-SemiBold.woff2") format("woff2");
+        font-weight: 600;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DancingScript";
+        src: url("../fonts/DancingScript-Regular.woff") format("woff"), url("../fonts/DancingScript-Regular.woff2") format("woff2");
+        font-weight: 500;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "DancingScript";
+        src: url("../fonts/DancingScript-Medium.woff") format("woff"), url("../fonts/DancingScript-Medium.woff2") format("woff2");
+        font-weight: 400;
+        font-display: swap;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .pozadina{
+        background-image: url('../images/radnja.jpg');
+        height: 695px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo{
+        width:250px ;
+        padding-left: 20px;
+    }
+
+    .cnt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background-color: #bd9094b7;
+    } 
+
+    ul{
+        padding: 20px;
+    }
+
+    a, li{
+        font-size: 25px;
+        padding: 20px;
+        text-decoration: none;
+        display: inline;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+    }
+
+
+    .boja:hover{
+        background-color: #8d6367
+    }
+
+    .icon{
+        width: 23px;
+        text-align: center;
+    }
+
+    .slide-loc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .slideshow-container {
+        position: relative;
+        width: 50%;
+    }
+
+    .mySlides {
+        display: none;
+        width: 100%;
+    }
+
+    .slike{
+        width: 100%;
+    }
+
+
+    .prethodni,
+    .sledeci {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .sledeci {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prethodni:hover,
+    .sledeci:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .lokacija{
+        width: 38%;
+    }
+
+    .lokacija1{
+        width: 100%;
+        height: 100%;
+        border:none;
+    }
+
+    .call{
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vreme{
+        width: 60%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    table{
+        width: 80%;
+        background-image: linear-gradient(#FCFCFC,#8b6e70);
+
+    }
+
+    caption{
+        font-size: 70px;
+        font-family: DancingScript;
+        padding-bottom: 20px;
+    }
+
+    table,td,tr{
+        border: 2px solid #8d5a70;
+        border-collapse: collapse;
+    }
+
+    tr,td{
+        width: 10%;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .br{
+        background-color: #d4c2c2;
+    }
+
+    .poziv{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .piccall{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slusalica{
+        background-color:#8d5a70 ;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        padding:20px ;
+    }
+
+    .slikacall{
+        width: 100px;
+        height: 100px;
+    }
+
+    .brtel{
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .broj{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .kontaktforma {
+        border-radius: 5px;
+        background-color: #D0AFB2;
+        padding-top: 20px;
+        padding-left:50px; 
+        padding-right: 50px;
+    }
+
+    .naslovdiv{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .naslov{
+        font-family: DancingScript;
+        font-size: 50px;
+    }
+
+    .podnaslov{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: rgb(66, 66, 66);
+        padding: 10px 0px;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 15px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .dugme {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .posalji-text{
+        box-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #CACEC9,
+            -0.2rem 0.1rem 1rem #C99190, 0.2rem 0.1rem 1rem #8b4d71,
+            0 -0.5rem 2rem #aa778d, 0 0.5rem 3rem #8d5a70;
+                    background-color: #BD9094;
+
+        padding: 5px;
+        font-size: 25px;
+        width: 30%;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+    }
+
+    #demo{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px;
+        margin: 50px -50px;
+        justify-content: center;
+        background-image: linear-gradient(#FCFCFC,#D0AFB2);
+    }
+
+    .name, .lastname, .place, .message{
+        font-size: 30px;
+        text-align: center;
+    }
+
+ 
+            
+    .footer{
+        background-color: #bd9094b7;
+        top:0;
+        width: 100%;
+    }
+
+    .karte1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .karte{
+        justify-content: space-evenly;
+        padding: 20px;
+        display: flex;
+        width: 250px;
+    }
+
+    .card{
+        bottom: 0;
+        padding-right: 20px;
+    }
+
+    .kartice{
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .razmak{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .uliniji{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo2{
+        width: fit-content;
+        bottom: 0;
+        padding-right: 20px;
+    }
+
+    .logoimg{
+        width: 250px;
+        padding-left: 20px;
+    }
+
+
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .naslov{
+            font-size: 40px;
+        }
+
+        .podnaslov{
+            font-size: 17px;
+        }
+
+        .logoimg{
+            width: 200px;
+        }
+   
+    }
+
+    @media only screen and (max-width: 930px) {
+
+        .cnt{
+            position: static;
+            display: block;
+        }
+
+        .menu{
+            float: none;
+        }
+
+        ul{
+            display: grid;
+            padding: 0;
+        }
+
+        a,li{
+            padding:8px;
+            font-size: 20px;
+            width: 100%;
+        }
+    
+
+        .slide-loc{
+            display: column;
+        }
+
+        .slideshow-container{
+            width: 100%;
+        }
+
+        .lokacija{
+            padding-top: 20px;
+            width: 100%;
+            height: 400px;
+        }
+
+        .logo{
+            width: 200px;
+        }
+
+        .karte{
+        display: flex;
+        }
+
+        
+        .karte1{
+            align-items: center;
+            justify-content: center;  
+        }
+
+        .uliniji{
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo2{
+            padding: 0px;
+        }
+
+        .call{
+            flex-direction: column;
+        }
+
+        .vreme{
+            width: 100%;
+            padding-bottom: 10%;
+        }
+
+        .poziv{
+            width: 100%;
+        }
+
+        
+
+    }
+
+        
+    @media only screen and (min-width: 930px) and (max-width: 1400px) {
+        
+        .home{
+            background-size: 132% 101%;
+            height: fit-content;
+        }
+
+        .cnt{
+            position: static;
+        }
+
+        ul{
+            padding: 15px;
+        }
+
+        a,li{
+            padding: 15px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .icon{
+            width: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 1250px) {
+        .pozadina{
+            height: 400px;
+        }
+    }
+
+

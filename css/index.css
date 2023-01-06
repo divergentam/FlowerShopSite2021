@@ -1,0 +1,498 @@
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("../fonts/DancingScript-Bold.woff") format("woff"), url("../fonts/DancingScript-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("../fonts/DancingScript-SemiBold.woff") format("woff"), url("../fonts/DancingScript-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("../fonts/DancingScript-Regular.woff") format("woff"), url("../fonts/DancingScript-Regular.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("../fonts/DancingScript-Medium.woff") format("woff"), url("../fonts/DancingScript-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.home{
+    background-image: url('../images/flowerhome1.jpg');
+    background-size: cover;
+    height: fit-content;
+    background-position-x: center;
+}
+
+.text{
+    color: bisque;
+}
+
+.bigtext{
+    font-size: 60px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: DancingScript;
+    width: 80%;
+}
+
+.smalltext{
+    color: rgb(250, 244, 235);
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 45%;
+
+}
+
+.logo{
+    padding-top: 30px;
+}
+
+.logoimg{
+    width: 250px;
+    padding-left: 20px;
+}
+
+.cnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #bd9094b7;
+} 
+
+ul{
+    padding: 20px;
+}
+
+a, li{
+    font-size: 25px;
+    padding: 20px;
+    text-decoration: none;
+    display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+
+.boja:hover{
+    background-color: #8d6367
+}
+
+.icon{
+    width: 23px;
+    text-align: center;
+}
+
+.bi1{
+       background-image: url(../images/buket1.png);
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.dostavatext{
+    padding-bottom: 50px;
+    color:#425B53;
+    font-size: 40px;
+    text-align: center;
+    font-family:DancingScript;
+}
+
+.dostava{
+    padding-left: 50%;
+    padding-top: 50px;    color:#C4B6AF;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.poruci{
+    box-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #CACEC9,
+            -0.2rem 0.1rem 1rem #C99190, 0.2rem 0.1rem 1rem #8b4d71,
+            0 -0.5rem 2rem #aa778d, 0 0.5rem 3rem #8d5a70;
+    border: none;
+    text-decoration: none;
+    background-color: #BD9094;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.poruci:hover{
+    background-color: #9b7275;
+}
+
+
+.ikone{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.pozicija{
+    width: 25%;
+}
+
+.zeleni{
+    border-radius: 50%;
+    background: #425B53;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.zt{
+    padding-top: 15px;
+    font-size: 35px;
+    font-family: DancingScript;
+    text-align: center;
+    color: #425B53;
+    font-style: italic;
+}
+
+.ztt{
+    font-size: 20px;
+    padding: 2px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.cvecara{
+    padding-top: 120px;
+    display: flex;
+}
+
+.slikacvecare{
+    width: 100%;
+}
+
+.footer{
+    background-color: #bd9094b7;
+    top:0;
+    width: 100%;
+}
+
+.logo{
+    width: fit-content;
+}
+
+.karte1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.karte{
+    justify-content: space-evenly;
+    padding: 20px;
+    display: flex;
+    width: 250px;
+}
+
+.card{
+    bottom: 0;
+    padding-right: 20px;
+}
+
+.kartice{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.razmak{
+    padding: 0px;
+    text-align: center;
+}
+
+.uliniji{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo2{
+    width: fit-content;
+    bottom: 0;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+
+   
+    .home{
+        background-image: url(../images/flowerhome.jpg);
+    }
+
+    .cnt{
+        position: static;
+        display: block;
+    }
+
+    .menu{
+        float: none;
+    }
+
+    ul{
+        display: grid;
+        padding: 0;
+    }
+
+    a,li{
+        padding:8px;
+        font-size: 20px;
+        width: 100%;
+     }
+ 
+
+    .text{
+        width: 100%;
+    }
+
+    .bigtext{
+        padding-top: 5px;
+        font-size: 31px;
+    }
+
+    .smalltext{
+        font-size: 15px;
+        padding-top: 12px;
+        width: 60%;
+    }
+
+    .logoimg{
+        width: 200px;
+        padding-left: 2px;
+    }
+
+
+    .dostavatext{
+        padding-top: 25px;
+        color: bisque;
+    }
+
+    .dostava{
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .zeleni{
+        height: 100px;
+        width: 100px;
+    }
+
+    .karte1{
+        align-items: center;
+        justify-content: space-evenly;  
+    }
+
+    .card{
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-right: 0;
+    }
+
+    .uliniji{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo2{
+        padding: 0px;
+    }
+
+    .poruci{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 930px) {
+
+    .cnt{
+        position: static;
+        display: block;
+    }
+
+    .menu{
+        float: none;
+    }
+
+    ul{
+        display: grid;
+        padding: 0;
+    }
+
+    a,li{
+        padding:8px;
+        font-size: 20px;
+        width: 100%;
+     }
+ 
+    .text{
+        width: 100%;
+    }
+
+    .bigtext{
+        padding-top: 2px;
+        font-size: 30px;
+    }
+
+    .smalltext{
+        font-size: 25px;
+        padding-top: 12px;
+        width: 60%;
+    }
+
+    .logoimg{
+        width: 150px;
+    }
+
+    .dostavatext{
+        padding-top: 25px;
+        color: bisque;
+    }
+
+    .dostava{
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .poruci{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .karte1{
+        align-items: center;
+        justify-content: space-evenly;  
+    }
+
+    .zeleni{
+        height: 100px;
+        width: 100px;
+    }
+
+    .bi1{
+        background-position-x: inherit;
+    }
+
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1400px) {
+    
+    .home{
+        background-size: 132% 101%;
+        height: fit-content;
+    }
+
+    .cnt{
+        position: static;
+    }
+
+    ul{
+        padding: 15px;
+    }
+
+    a,li{
+        padding: 15px;
+        font-size: 20px;
+        width: 100%;
+     }
+
+    .icon{
+         width: 15px;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .bigtext{
+        font-size: 40px;
+    }
+
+    .smalltext{
+        font-size: 25px;
+        width: 60%;
+    }
+
+    .logoimg{
+        width: 200px;
+    }
+    
+    .poruci{
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .logoidostava{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .cvecara{
+        padding-top: 10px;
+    }
+
+    .karte{
+        display: flex;
+    }
+
+    .ikone{
+        display: column;
+        padding-top: 10px;
+    }
+
+    .pozicija{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .uliniji{
+        justify-content: none;
+    }
+
+}
+
+
+
+
+
